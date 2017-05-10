@@ -61,7 +61,7 @@ public class GenericDAO<T> implements DAO<T>  {
         startOperation();
         Query query;
                  
-        query = entityManager.createQuery("select x from " +  type.getName() + " x", udu.usa.laboratorio.modelo.Categoria.class);
+        query = entityManager.createNativeQuery("select * from Categoria "    );
         startOperation();
         List<T> ts = (List<T>) query.getResultList();;
         entityManager.close();
