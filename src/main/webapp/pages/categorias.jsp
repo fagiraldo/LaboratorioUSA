@@ -178,7 +178,7 @@
                                 </div>
                             </div>
 
-                               <a href="#" data-href="CategoriaServlet?action=delete&categoria=${categoria.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
+                               <a href="#" data-href="CategoriaServlet?action=delete&categoria=${categoria[0]}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
 
                                 </td>
                                                                                                                
