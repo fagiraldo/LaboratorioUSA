@@ -16,11 +16,13 @@
             <version>6.0</version>
         </dependency>
         <!-- Glassfish -->
+        <!-- https://mvnrepository.com/artifact/org.glassfish.main.extras/glassfish-embedded-web -->
         <dependency>
-            <groupId>org.glassfish.extras</groupId>
+            <groupId>org.glassfish.main.extras</groupId>
             <artifactId>glassfish-embedded-web</artifactId>
-            <version>3.1.1</version>
-        </dependency>	
+            <version>4.1</version>
+        </dependency>
+
         
         <!-- JDBC Driver -->
 	<dependency>
