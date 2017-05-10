@@ -12,6 +12,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaQuery;
 
 
 /**
@@ -59,8 +60,8 @@ public class GenericDAO<T> implements DAO<T>  {
     public List<T> findAll(){
         startOperation();
         Query query;
-        
-        query = entityManager.createQuery("select x from " +  type.getName() + " x");
+                 
+        query = entityManager.createQuery("select x from " +  type.getName() + " x", udu.usa.laboratorio.modelo.Categoria.class);
         startOperation();
         List<T> ts = (List<T>) query.getResultList();;
         entityManager.close();
