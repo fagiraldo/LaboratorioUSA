@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="LaboratorioPU" transaction-type="RESOURCE_LOCAL">
+     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+     <class>udu.usa.laboratorio.modelo.Categoria</class>
+     <class>udu.usa.laboratorio.modelo.Dependencia</class>
+     <class>udu.usa.laboratorio.modelo.Programa</class>
+     <class>udu.usa.laboratorio.modelo.Auxiliar</class>
+     <class>udu.usa.laboratorio.modelo.Docente</class>
+     <class>udu.usa.laboratorio.modelo.Usuario</class>
+     <class>udu.usa.laboratorio.modelo.Activo</class>
+     <class>udu.usa.laboratorio.modelo.MantenimientoPreventivo</class>
+     <class>udu.usa.laboratorio.modelo.Mantenimiento</class>
+     <class>udu.usa.laboratorio.modelo.DetallePrestamo</class>
+     <class>udu.usa.laboratorio.modelo.Prestamo</class>
+    
+  </persistence-unit>
+</persistence>

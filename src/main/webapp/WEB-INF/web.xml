@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+    <display-name>CrunchifyJSPServletExample</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>ActivoServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.ActivoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.SearchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletPrestamo</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.ServletPrestamo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CategoriaServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.CategoriaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DependenciaServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.DependenciaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProgramaServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.ProgramaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PersonaServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.PersonaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MantenimientoServlet</servlet-name>
+        <servlet-class>edu.usa.laboratorio.controlador.MantenimientoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActivoServlet</servlet-name>
+        <url-pattern>/pages/ActivoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/pages/SearchServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletPrestamo</servlet-name>
+        <url-pattern>/pages/ServletPrestamo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CategoriaServlet</servlet-name>
+        <url-pattern>/pages/CategoriaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DependenciaServlet</servlet-name>
+        <url-pattern>/pages/DependenciaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProgramaServlet</servlet-name>
+        <url-pattern>/pages/ProgramaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PersonaServlet</servlet-name>
+        <url-pattern>/pages/PersonaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MantenimientoServlet</servlet-name>
+        <url-pattern>/pages/MantenimientoServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
