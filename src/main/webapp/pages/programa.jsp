@@ -152,9 +152,9 @@
                                                            
                                                             <tr>
                                                             <td>${status.count}</td>
-                                                            <td>${programa.nombre}</td>
+                                                            <td>${programa[1]}</td>
                                                             <td> 
-                                                                 <a href="ProgramaServlet?action=edit&programa=${programa.id}" class="btn btn-info" role="button">Editar</a>
+                                                                 <a href="ProgramaServlet?action=edit&programa=${programa[0]}" class="btn btn-info" role="button">Editar</a>
                                                             </td>
                                                             <td> 
                                                                 
@@ -180,7 +180,7 @@
                                 </div>
                             </div>
 
-                               <a href="#" data-href="ProgramaServlet?action=delete&programa=${programa.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
+                               <a href="#" data-href="ProgramaServlet?action=delete&programa=${programa[0]}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
 
                                 </td>
                                                                                                                

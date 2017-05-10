@@ -185,11 +185,11 @@
                                                            
                                                             <tr>
                                                             <td>${status.count}</td>
-                                                            <td>${auxiliar.nombre}</td>
-                                                            <td>${auxiliar.apellido}</td>
-                                                            <td>${auxiliar.telefono}</td>
+                                                            <td>${auxiliar[2]}</td>
+                                                            <td>${auxiliar[3]}</td>
+                                                            <td>${auxiliar[5]}</td>
                                                             <td> 
-                                                                 <a href="PersonaServlet?action=edit&auxiliar=${auxiliar.id}" class="btn btn-info" role="button">Editar</a>
+                                                                 <a href="PersonaServlet?action=edit&auxiliar=${auxiliar[0]}" class="btn btn-info" role="button">Editar</a>
                                                             </td>
                                                             <td> 
                                                                 
@@ -215,7 +215,7 @@
                                 </div>
                             </div>
 
-                               <a href="#" data-href="PersonaServlet?action=delete&auxiliar=${auxiliar.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
+                               <a href="#" data-href="PersonaServlet?action=delete&auxiliar=${auxiliar[0]}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
 
                                 </td>
                                                                                                                
