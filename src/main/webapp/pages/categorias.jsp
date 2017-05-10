@@ -146,11 +146,11 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <c:forEach items="${requestScope.categorias}" var="categoria" varStatus="status">
+                                                        <c:forEach items="${requestScope.categorias}" begin="0" end="1" var="categoria" varStatus="status">
                                                            
                                                             <tr>
                                                             <td>${status.count}</td>
-                                                            
+                                                            <td>${categoria.nombre}</td>
                                                             <td> 
                                                                  <a href="CategoriaServlet?action=edit&categoria=${categoria.id}" class="btn btn-info" role="button">Editar</a>
                                                             </td>
