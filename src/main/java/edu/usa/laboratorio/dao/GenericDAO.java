@@ -32,6 +32,7 @@ public class GenericDAO<T> implements DAO<T>  {
     public GenericDAO(Class type){
         this.type = type;
         
+        
        
     }
             
@@ -62,7 +63,7 @@ public class GenericDAO<T> implements DAO<T>  {
         startOperation();
         Query query;
                  
-        query = entityManager.createNativeQuery("select * from " + this.getEntityName());
+        query = entityManager.createNativeQuery("select * from " + this.type.getSimpleName());
         startOperation();
         List<T> ts = (List<T>) query.getResultList();;
         entityManager.close();
