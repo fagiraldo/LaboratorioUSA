@@ -146,7 +146,44 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                       
+                                                        <c:forEach items="${requestScope.categorias}" var="categoria" varStatus="status">
+                                                           
+                                                            <tr>
+                                                            <td>${status.count}</td>
+                                                            
+                                                            <td> 
+                                                                 <a href="CategoriaServlet?action=edit&categoria=${categoria.id}" class="btn btn-info" role="button">Editar</a>
+                                                            </td>
+                                                            <td> 
+                                                                
+                            <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Confirmaci&oacute;n de Eliminaci&oacute;n</h4>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Esta seguro del proceso de eliminaci&oacute;n, este proceso es irreversible.</p>
+                                            <p>Desea Proceder?</p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                            <a class="btn btn-danger btn-ok">Eliminar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                               <a href="#" data-href="CategoriaServlet?action=delete&categoria=${categoria.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
+
+                                </td>
+                                                                                                               
+                                                        </tr>
+                                                       </c:forEach>
                                                     </tbody>
                                                 </table>
                                             </div>
