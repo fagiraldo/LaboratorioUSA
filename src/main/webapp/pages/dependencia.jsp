@@ -152,9 +152,9 @@
                                                            
                                                             <tr>
                                                             <td>${status.count}</td>
-                                                            <td>${dependencia.nombre}</td>
+                                                            <td>${dependencia[1]}</td>
                                                             <td> 
-                                                                 <a href="DependenciaServlet?action=edit&dependencia=${dependencia.id}" class="btn btn-info" role="button">Editar</a>
+                                                                 <a href="DependenciaServlet?action=edit&dependencia=${dependencia[0]}" class="btn btn-info" role="button">Editar</a>
                                                             </td>
                                                             <td> 
                                                                 
@@ -180,7 +180,7 @@
                                 </div>
                             </div>
 
-                               <a href="#" data-href="DependenciaServlet?action=delete&dependencia=${dependencia.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
+                               <a href="#" data-href="DependenciaServlet?action=delete&dependencia=${dependencia[0]}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
 
                                 </td>
                                                                                                                
