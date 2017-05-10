@@ -1,5 +1,5 @@
+<%@page isELIgnored="false" %>
 <%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
-<%@ page  isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -147,7 +147,7 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <c:forEach items="${requestScope.categorias}" begin="0" end="1" var="categoria" varStatus="status">
+                                                        <c:forEach items="${requestScope.categorias}" var="categoria" varStatus="status">
                                                            
                                                             <tr>
                                                             <td>${status.count}</td>
