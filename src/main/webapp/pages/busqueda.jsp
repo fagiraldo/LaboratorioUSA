@@ -225,11 +225,11 @@
                                                                     <select name="categoria" class="form-control">
                                                                      <c:forEach items="${requestScope.categorias}" var="categoria" varStatus="status">
                                                                         <c:choose>
-                                                                            <c:when test="${requestScope.Activo.categoria.id == categoria.id}">
-                                                                                <option value="${categoria.id}" selected="true">${categoria.nombre}</option>
+                                                                            <c:when test="${requestScope.Activo.categoria.id == categoria[0]}">
+                                                                                <option value="${categoria[0]}" selected="true">${categoria[1]}</option>
                                                                             </c:when>
                                                                             <c:otherwise>
-                                                                               <option value="${categoria.id}">${categoria.nombre}</option>  
+                                                                               <option value="${categoria[0]}">${categoria[1]}</option>  
                                                                             </c:otherwise>
                                                                         </c:choose>
                                                                     </c:forEach>  
@@ -283,9 +283,9 @@
                                     <c:forEach items="${requestScope.Activo.mantenimientoPreventivo}" var="preventivo">
                                         <tr>
                                         <td>1</td>
-                                        <td>${preventivo.numMeses}</td>
-                                        <td>${preventivo.actividad}</td>
-                                        <td>${preventivo.materiales}</td>
+                                        <td>${preventivo[3]}</td>
+                                        <td>${preventivo[1]}</td>
+                                        <td>${preventivo[2]}</td>
                                         
                                     </tr>
                                     </c:forEach>
