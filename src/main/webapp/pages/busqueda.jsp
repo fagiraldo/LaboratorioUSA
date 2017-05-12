@@ -225,7 +225,7 @@
                                                                     <select name="categoria" class="form-control">
                                                                      <c:forEach items="${requestScope.categorias}" var="categoria" varStatus="status">
                                                                         <c:choose>
-                                                                            <c:when test="${requestScope.Activo.categoria.id == categoria[0]}">
+                                                                            <c:when test="${requestScope.Activo.categoria[0] == categoria[0]}">
                                                                                 <option value="${categoria[0]}" selected="true">${categoria[1]}</option>
                                                                             </c:when>
                                                                             <c:otherwise>
