@@ -206,7 +206,7 @@
                                                                 <div class="form-group">
                                                                     <select name="categoria" class="form-control">
                                                                        <c:forEach items="${requestScope.categorias}" var="categoria" varStatus="status">
-                                                                           <option value="${categoria.id}">${categoria.nombre}</option>  
+                                                                           <option value="${categoria[0]}">${categoria[1]}</option>  
                                                                          
                                                                         </c:forEach>    
                                                                         

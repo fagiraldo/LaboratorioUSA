@@ -139,10 +139,10 @@
                                                                         
                                                                         <c:choose>
                                                                         <c:when test="${requestScope.estudiante.programa.id == programa.id}">
-                                                                            <option value="${programa.id}" selected="true">${programa.nombre}</option>
+                                                                            <option value="${programa[0]}" selected="true">${programa[1]}</option>
                                                                         </c:when>
                                                                         <c:otherwise>
-                                                                           <option value="${programa.id}">${programa.nombre}</option>  
+                                                                           <option value="${programa[0]}">${programa[1]}</option>  
                                                                         </c:otherwise>
                                                                     </c:choose>
                                                                         
