@@ -138,11 +138,11 @@
                                                                     <c:forEach items="${requestScope.dependencias}" var="dependencia" varStatus="status">
                                                                         
                                                                         <c:choose>
-                                                                        <c:when test="${requestScope.docente.dependencia.id == dependencia.id}">
-                                                                            <option value="${dependencia.id}" selected="true">${dependencia.nombre}</option>
+                                                                        <c:when test="${requestScope.docente.dependencia == dependencia[0]}">
+                                                                            <option value="${dependencia[0]}" selected="true">${dependencia[1]}</option>
                                                                         </c:when>
                                                                         <c:otherwise>
-                                                                           <option value="${dependencia.id}">${dependencia.nombre}</option>  
+                                                                           <option value="${dependencia[0]}">${dependencia[1]}</option>  
                                                                         </c:otherwise>
                                                                     </c:choose>
                                                                         
@@ -215,11 +215,11 @@
                                                            
                                                             <tr>
                                                             <td>${status.count}</td>
-                                                            <td>${docente.nombre}</td>
-                                                            <td>${docente.apellido}</td>
-                                                            <td>${docente.telefono}</td>
+                                                            <td>${docente[2]}</td>
+                                                            <td>${docente[3]}</td>
+                                                            <td>${docente[5]}</td>
                                                             <td> 
-                                                                 <a href="PersonaServlet?action=edit&docente=${docente.id}" class="btn btn-info" role="button">Editar</a>
+                                                                 <a href="PersonaServlet?action=edit&docente=${docente[0]}" class="btn btn-info" role="button">Editar</a>
                                                             </td>
                                                             <td> 
                                                                 
@@ -245,7 +245,7 @@
                                 </div>
                             </div>
 
-                               <a href="#" data-href="PersonaServlet?action=delete&docente=${docente.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
+                               <a href="#" data-href="PersonaServlet?action=delete&docente=${docente[0]}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-info" role="button">Borrar</a>
 
                                 </td>
                                                                                                                
