@@ -83,12 +83,12 @@
                                                             <th colspan="3">
                                                                 <div class="form-group has-error">
                                                                     <label class="control-label" for="inputError">Cedula</label>
-                                                                    <input class="form-control" name="cedula" placeholder="Enter text" value="${requestScope.docente.cedula}" required>
+                                                                    <input class="form-control" name="cedula" placeholder="Enter text" value="${requestScope.docente[1]}" required>
                                                                 </div>
                                                                 
                                                                 
                                                             <c:if test="${not empty requestScope.docente}">
-                                                                <input type="hidden" name="id" value="${requestScope.docente.id}"/>
+                                                                <input type="hidden" name="id" value="${requestScope.docente[0]}"/>
                                                             </c:if>
                                                               
 
@@ -98,7 +98,7 @@
                                                              <th colspan="2">
                                                                 <div class="form-group">
                                                                     <label> Email</label>
-                                                                    <input class="form-control"  name="email" placeholder="Enter text" value="${requestScope.docente.email}" required>
+                                                                    <input class="form-control"  name="email" placeholder="Enter text" value="${requestScope.docente[4]}" required>
                                                                 </div>
                                                             </th>
                                                         </tr>
@@ -107,7 +107,7 @@
                                                             <th colspan="2">
                                                                 <div class="form-group">
                                                                     <label> Nombre</label>
-                                                                    <input class="form-control"  name="nombre" value="${requestScope.docente.nombre}" placeholder="Enter text"required>
+                                                                    <input class="form-control"  name="nombre" value="${requestScope.docente[2]}" placeholder="Enter text"required>
                                                                 </div>
 
 
@@ -116,14 +116,14 @@
                                                             <th colspan="2">
                                                                 <div class="form-group">
                                                                     <label> Apellido</label>
-                                                                    <input class="form-control"  name="apellido" value="${requestScope.docente.apellido}" placeholder="Enter text" required>
+                                                                    <input class="form-control"  name="apellido" value="${requestScope.docente[3]}" placeholder="Enter text" required>
                                                                 </div>
                                                             </th>
                                                             <td></td>
                                                             <th colspan="2">
                                                                 <div class="form-group">
                                                                     <label> Telefono</label>
-                                                                    <input class="form-control"  name="telefono" value="${requestScope.docente.telefono}" placeholder="Enter text" required>
+                                                                    <input class="form-control"  name="telefono" value="${requestScope.docente[5]}" placeholder="Enter text" required>
                                                                 </div>
 
 
